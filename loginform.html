@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <p>Welcome. Please log tf in</p>
+
+        <form>
+            <label for="usernameinput>">Username:</label><input type="text" id="usernameinput"/><br/>
+            <label for="passwordinput">Password</label><input type="password" id="passwordinput"/>
+            <p id="message"></p>
+            <br/><br/>
+            <a href="=">Log in</a>
+        </form>
+
+        <script>
+
+            function verifyuser(){
+                var username= document.getElementById("usernameinput").value;
+                var password= document.getElementById("passwordinput").value;
+          
+                checkUserCreds(username,password);
+            }
+            function checkUserCreds(username,password){
+                var systemUsername= "bond";
+                var systemPassword= "007";
+                if(username == systemUsername && password == systemPassword){
+                    document.getElementById("message").innerHTML = "Correct. loggin you in... ";
+                } else {
+                    document.getElementById("message").innerHTML = "Username or password are Incorrect bitch. try tf again.";
+                }
+            }
+        </script>
+    </body>
+</html>

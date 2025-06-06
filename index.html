@@ -1,21 +1,28 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div id="menu">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        <div class="gallery">
-            <a href="avenger-1.html"><img src="images 2/avengers_01.jpg" /></a>
-            <a href="avernger-2.html"><img src="images 2/avengers_02.jpg" /></a>
-            <a href="avenger-3.html"><img src="images 2/avengers_03.jpg" /></a>
-            <a href="avenger-4.html"><img src="images 2/avengers_04.jpg" /></a>
-            <a href="avenger-5.html"><img src="images 2/avengers_05.jpg" /></a>
-            <a href="avenger-6.html"><img src="images 2/avengers_06.jpg" /></a>
-        </div>
+        <h1 id="headind1"></h1>
+        <p id="paragraph1"></p>
+        <p id="paragraph2"></p>
+
+        <script>
+            var text1;
+            var text2;
+            var text3;
+
+            var numA = 7;
+            var numB =10;
+
+            text1= "HELLO";
+            text2="i like coding";
+            text3="JS is amazing";
+
+
+            document.getElementById("headind1").innerHTML = (text1);
+            document.getElementById("paragraph1").innerHTML = (text2 + text3);
+            document.getElementById("paragraph2").innerHTML = (numA + "x" + numB + "=" + numA * numB);
+        </script>
     </body>
 </html>
